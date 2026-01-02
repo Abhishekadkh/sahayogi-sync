@@ -1,4 +1,4 @@
-# Sahayog Sync – Project Folder Structure
+# Sahayogi Sync – Project Folder Structure
 
 This is the recommended **full-stack folder structure** for the **Sahayog Sync** hackathon project (updated from original "Resilient Kinship").  
 It supports:
@@ -11,7 +11,7 @@ It supports:
 
 ```
 
-sahayog-sync/
+sahayogi-sync/
 ├── README.md                           # Project overview, one-line pitch, setup guide, tech stack
 ├── .gitignore                          # Ignore node_modules, pycache, .env, outputs/, etc.
 ├── package.json                        # Root workspace (optional monorepo with npm/yarn workspaces)
