@@ -83,7 +83,78 @@ ML / Graph Engine (NetworkX + Pandas)
 
 ## 📂 Project Structure
 
-```
+``
+sahayogi-backend/
+├── index.js                       # Express gateway / file upload + forward to AI service
+├── package.json
+├── test_households.csv
+├── app/
+│   ├── api/
+│   │   └── allocate.py            # FastAPI router wraps allocator
+│   ├── services/
+│   │   ├── allocator_service.py   # Reads UploadFile -> calls ml_python allocator
+│   │   └── parser.js              # CSV parser for node-side processing
+│   ├── ml_python/                 # Python ML service packaged inside backend app
+│   │   ├── src/
+│   │   │   ├── init.py
+│   │   │   ├── allocator.py
+│   │   │   ├── data_loader.py
+│   │   │   ├── visualize.py
+│   │   │   └── streamlit_app.py
+│   │   └── README.md
+│   └── schemas/
+│       └── allocation.py          # Pydantic models
+├── services/                       # Node services (e.g., parser, CSV helpers)
+└── uploads/                        # Temp uploaded files (runtime)
+
+sahayogi-frontend/
+├── index.html
+├── package.json
+├── README.md
+├── eslint.config.js
+├── src/
+│   ├── main.tsx
+│   ├── App.tsx
+│   ├── pages/
+│   │   ├── Home.tsx
+│   │   ├── Dashboard.tsx
+│   │   └── About.tsx
+│   ├── components/
+│   │   └── Navbar.tsx
+│   └── index.css
+└── public/
+
+ml-python/
+├── requirements.txt                # Module-specific dependencies (mirrors top-level)
+├── README.md
+├── data/
+│   ├── raw/
+│   │   ├── households.csv
+│   │   ├── edges.csv
+│   │   └── flood_scenario.json
+│   └── processed/
+└── src/
+    ├── init.py                     # config loader (`get_config`)
+    ├── data_loader.py
+    ├── allocator.py                # `allocate_resources`
+    ├── visualize.py
+    └── utils.py
+
+notebooks/
+├── 01_Data_Generation.ipynb
+├── 02_Exploratory_Analysis.ipynb
+├── 03_GNN_Training.ipynb
+├── allocation_graph.ipynb
+└── MVP_Demo.ipynb
+
+docs/
+├── MVP_Demo_Instructions.md
+└── project_proposal.md
+
+outputs/
+├── allocations/
+├── visualizations/
+└── reports/
 
 ```
 
@@ -199,6 +270,10 @@ Frontend
 GitHub: 
 [https://github.com/ashimmdangal](https://github.com/ashimmdangal)
 
+**Ganga Raj Adhikari**
+Frontend
+GitHub: 
+[[https://github.com/ashimmdangal](https://github.com/raj-ganga07)]([https://github.com/ashimmdangal](https://github.com/raj-ganga07))
 
 ---
 
