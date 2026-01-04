@@ -109,3 +109,4 @@ st.info(
     "Click the Plotly icon on top-right of the graph to interact with it in a full webpage.\n"
     "This allows zooming, panning, and hover details."
 )
+
