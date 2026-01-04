@@ -271,9 +271,9 @@ GitHub:
 [https://github.com/ashimmdangal](https://github.com/ashimmdangal)
 
 **Ganga Raj Adhikari**
-Frontend
-GitHub: 
-[[https://github.com/ashimmdangal](https://github.com/raj-ganga07)]([https://github.com/ashimmdangal](https://github.com/raj-ganga07))
+
+GitHub : 
+[https://github.com/raj-ganga07](https://github.com/raj-ganga-07)
 
 ---
 
