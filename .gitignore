@@ -1,3 +1,72 @@
+# ========================
+# Node / Frontend
+# ========================
+node_modules/
+dist/
+build/
+.env
+.DS_Store
+*.log
+package-lock.json
+yarn.lock
+.vite
+
+# React / Vite specific
+public/*.svg
+*.local
+*.cache
+
+# ========================
+# Python / Backend / ML
+# ========================
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.env
+*.venv/
+venv/
+env/
+*.egg-info/
+*.egg
+
+# Jupyter Notebooks
 .ipynb_checkpoints/
-__pycache__
-backend_fastapi
+
+# ML Python outputs
+outputs/
+ml-python/data/processed/
+ml-python/__pycache__/
+
+# ========================
+# Express / Node Backend
+# ========================
+backend_express/node_modules/
+backend_express/dist/
+backend_express/.env
+
+# ========================
+# OS / IDE
+# ========================
+.DS_Store
+*.swp
+*.swo
+*.idea/
+.vscode/
+*.iml
+
+
+# ========================
+# Logs
+# ========================
+*.log
+
+# ========================
+# Coverage / Test
+# ========================
+coverage/
+*.cover
+*.coverage
+*.py,cover
+.hypothesis/
+.pytest_cache/
