@@ -37,7 +37,7 @@ def allocate_resources(G):
 
         allocation = {'to': node}
 
-        allocated_any = False  # Flag to check if any resource was actually allocated
+        allocated_any = False 
 
         for r in resources:
             res_col = f'resources_{r}'
@@ -59,9 +59,8 @@ def allocate_resources(G):
                     allocated_any = True
                     break
 
-        if allocated_any:  # Only append if at least one resource was allocated
+        if allocated_any:  
             allocation_plan.append(allocation)
 
-    # After processing all nodes, create DataFrame
     alloc_df = pd.DataFrame(allocation_plan)
     return alloc_df
