@@ -64,3 +64,4 @@ def allocate_resources(G):
 
     alloc_df = pd.DataFrame(allocation_plan)
     return alloc_df
+    
